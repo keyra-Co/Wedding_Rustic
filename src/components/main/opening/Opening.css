@@ -1,0 +1,118 @@
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    color: var(--clr-secondary);
+}
+
+.opening__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-lg);
+
+    text-align: center;
+    z-index: 1;
+    /* padding: var(--size-2xl) var(--size-3xl) var(--size-5xl); */
+}
+
+.opening__container svg {
+    margin-bottom: -1rem;
+}
+
+.opening__paragraph {
+    font-size: var(--size-base);
+    font-family: "Crimson Pro", serif;
+    text-shadow: 0px 0px 3px rgba(250, 243, 224, .5);
+}
+
+.opening__surah {
+    font-size: var(--size-lg);
+    font-family: "Pacifico", cursive;
+    margin: var(--size-xl) 0;
+}
+
+/* xs */
+@media (min-width : 475px) {
+    .opening__paragraph {
+        font-size: var(--size-lg);
+    }
+
+    .opening__surah {
+        font-size: var(--size-xl);
+    }
+
+}
+
+/* sm */
+@media (min-width : 640px) {
+    .opening__container {
+        gap: var(--size-xl);
+        padding: var(--size-3xl) var(--size-4xl) var(--size-6xl);
+    }
+
+    .opening__paragraph {
+        font-size: var(--size-xl);
+    }
+
+    .opening__surah {
+        font-size: var(--size-2xl);
+    }
+
+    .anima {
+        width: var(--size-9xl);
+        height: var(--size-9xl);
+    }
+}
+
+/* md */
+@media (min-width : 768px) {
+    .opening__container {
+        gap: var(--size-2xl);
+        padding: var(--size-4xl) var(--size-5xl) var(--size-7xl);
+    }
+
+    .opening__paragraph {
+        font-size: var(--size-2xl);
+    }
+
+    .opening__surah {
+        font-size: var(--size-3xl);
+    }
+
+    .anima {
+        width: var(--size-10xl);
+        height: var(--size-10xl);
+    }
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .opening__container {
+        gap: var(--size-lg);
+        padding: var(--size-3xl) var(--size-7xl) var(--size-5xl);
+    }
+
+    .opening__paragraph {
+        font-size: var(--size-lg);
+    }
+
+    .opening__surah {
+        font-size: var(--size-xl);
+    }
+
+    .anima {
+        width: var(--size-8xl);
+        height: var(--size-8xl);
+    }
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */

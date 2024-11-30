@@ -1,0 +1,122 @@
+.ending {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--clr-dark);
+    position: relative;
+    height: 50vh;
+}
+
+.ending__title {
+    font-size: var(--size-4xl);
+    font-family: "Great vibes";
+    text-transform: capitalize;
+
+    margin-bottom: var(--size-4xl);
+}
+
+.ending__word {
+    font-size: var(--size-lg);
+    font-family: "Dancing Script", "Cormorant Garamond", serif;
+    text-align: center;
+
+    margin-top: calc(var(--size-4xl) * -1);
+}
+
+.ending__closer {
+    font-size: var(--size-base);
+    font-family: "Crimson Pro";
+    font-weight: bolder;
+}
+
+/* xs */
+@media (min-width : 475px) {
+    .ending {
+        height: 50vh;
+    }
+
+    .ending__title {
+        font-size: var(--size-5xl);
+        margin-bottom: var(--size-5xl);
+    }
+
+    .ending__word {
+        font-size: var(--size-xl);
+        margin-top: calc(var(--size-5xl) * -1);
+    }
+
+    .ending__closer {
+        font-size: var(--size-lg);
+    }
+}
+
+/* sm */
+@media (min-width : 640px) {
+    .ending {
+        height: 50vh;
+    }
+
+    .ending__title {
+        font-size: var(--size-6xl);
+        margin-bottom: var(--size-6xl);
+    }
+
+    .ending__word {
+        font-size: var(--size-2xl);
+        margin-top: calc(var(--size-6xl) * -1);
+    }
+
+    .ending__closer {
+        font-size: var(--size-xl);
+    }
+}
+
+/* md */
+@media (min-width : 768px) {
+    .ending {
+        height: 50vh;
+    }
+
+    .ending__title {
+        font-size: var(--size-7xl);
+        margin-bottom: var(--size-7xl);
+    }
+
+    .ending__word {
+        font-size: var(--size-3xl);
+        margin-top: calc(var(--size-7xl) * -1);
+    }
+
+    .ending__closer {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .ending {
+        height: 50vh;
+    }
+
+    .ending__title {
+        font-size: var(--size-4xl);
+        margin-bottom: var(--size-4xl);
+    }
+
+    .ending__word {
+        font-size: var(--size-xl);
+        margin-top: calc(var(--size-4xl) * -1);
+    }
+
+    .ending__closer {
+        font-size: var(--size-lg);
+    }
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */

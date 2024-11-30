@@ -1,0 +1,282 @@
+.info {
+    position: relative;
+}
+
+.info__container-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-3xl);
+
+    background-color: rgba(255, 255, 255, .3);
+    padding: var(--size-2xl) var(--size-lg);
+    box-shadow: 1px 1px 3px 3px rgba(178, 154, 132, .5);
+    border-radius: 10px;
+}
+
+.info__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-base);
+
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--clr-secondary);
+}
+
+.info__content-title {
+    font-size: var(--size-2xl);
+    font-family: "Dancing Script", serif;
+    text-shadow: 0px 0px 3px rgba(78, 54, 32, .3);
+}
+
+.gift__description {
+    font-family: 'Dancing Script';
+    font-size: var(--size-base);
+}
+
+.gift__btn-container {
+    display: flex;
+    gap: var(--size-lg);
+}
+
+.gift__btn {
+    color: var(--clr-secondary);
+    font-size: var(--size-xs);
+    text-shadow: .5px 0px .5px rgba(78, 54, 32, .5);
+
+    background-color: var(--clr-primary);
+    padding: 3px 6px;
+    box-shadow: 1px 1px 3px 1px rgba(78, 54, 32, .3);
+}
+
+.gift__btn:hover {
+    color: var(--clr-primary);
+    background-color: var(--clr-secondary);
+}
+
+/* CountDown */
+.countDown__date-container {
+    display: flex;
+    gap: var(--size-xxs);
+}
+
+.countDown__date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 3.5rem;
+    padding: var(--size-lg);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px rgba(178, 154, 132, .5);
+    box-sizing: border-box;
+    background-color: var(--clr-primary);
+}
+
+.countDown__time {
+    font-family: "Dancing Script";
+    font-weight: bold;
+    font-size: var(--size-xl);
+}
+
+.countDown__name {
+    font-size: var(--size-base);
+}
+
+/* xs */
+@media (min-width : 475px) {
+    .info__container-content {
+        gap: var(--size-4xl);
+    }
+
+    .info__content {
+        gap: var(--size-lg);
+    }
+
+    .info__content-title {
+        font-size: var(--size-3xl);
+    }
+
+    .gift__description {
+        font-size: var(--size-lg);
+    }
+
+    .gift__btn-container {
+        gap: var(--size-2xl);
+
+    }
+
+    .gift__btn {
+        font-size: var(--size-base);
+        padding: 4px 8px;
+    }
+
+    /* countDown */
+
+    .countDown__date-container {
+        gap: var(--size-xs);
+    }
+
+    .countDown__date {
+        padding: var(--size-xl);
+        width: 4.5rem;
+    }
+
+    .countDown__time {
+        font-size: var(--size-2xl);
+    }
+
+    .countDown__name {
+        font-size: var(--size-lg);
+    }
+}
+
+/* sm */
+@media (min-width : 640px) {
+    .info__container-content {
+        gap: var(--size-5xl);
+    }
+
+    .info__content {
+        gap: var(--size-xl);
+    }
+
+    .info__content-title {
+        font-size: var(--size-4xl);
+    }
+
+    .gift__description {
+        font-size: var(--size-xl);
+    }
+
+    .gift__btn-container {
+        gap: var(--size-3xl);
+    }
+
+    .gift__btn {
+        font-size: var(--size-lg);
+        padding: 5px 10px;
+    }
+
+    /* CountDown */
+
+    .countDown__date-container {
+        gap: var(--size-sm);
+    }
+
+    .countDown__date {
+        padding: var(--size-2xl);
+        width: 5.5rem;
+    }
+
+    .countDown__time {
+        font-size: var(--size-3xl);
+    }
+
+    .countDown__name {
+        font-size: var(--size-xl);
+    }
+}
+
+/* md */
+@media (min-width : 768px) {
+    .info__container-content {
+        gap: var(--size-6xl);
+    }
+
+    .info__content {
+        gap: var(--size-2xl);
+    }
+
+    .info__content-title {
+        font-size: var(--size-5xl);
+    }
+
+    .gift__description {
+        font-size: var(--size-2xl);
+    }
+
+    .gift__btn-container {
+        gap: var(--size-4xl);
+    }
+
+    .gift__btn {
+        font-size: var(--size-xl);
+        padding: 6px 12px;
+    }
+
+    /* CountDown */
+
+    .countDown__date-container {
+        gap: var(--size-base);
+    }
+
+    .countDown__date {
+        padding: var(--size-3xl);
+        width: 6.5rem;
+    }
+
+    .countDown__time {
+        font-size: var(--size-4xl);
+    }
+
+    .countDown__name {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .info__container-content {
+        gap: var(--size-4xl);
+    }
+
+    .info__content {
+        gap: var(--size-xl);
+    }
+
+    .info__content-title {
+        font-size: var(--size-3xl);
+    }
+
+    .gift__description {
+        font-size: var(--size-xl);
+    }
+
+    .gift__btn-container {
+        gap: var(--size-xl);
+    }
+
+    .gift__btn {
+        font-size: var(--size-base);
+        padding: 3px 10px;
+    }
+
+    /* CountDown */
+
+    .countDown__date-container {
+        gap: var(--size-sm);
+    }
+
+    .countDown__date {
+        padding: var(--size-xl);
+        width: 5.5rem;
+    }
+
+    .countDown__time {
+        font-size: var(--size-3xl);
+    }
+
+    .countDown__name {
+        font-size: var(--size-lg);
+    }
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */

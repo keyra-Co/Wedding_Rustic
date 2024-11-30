@@ -1,0 +1,115 @@
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100vh;
+    padding: var(--size-5xl) 0 var(--size-xl);
+}
+
+
+.hero__title {
+    font-family: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: var(--size-4xl);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--clr-third);
+    text-shadow: -1px 1px 5px rgba(78, 54, 32, 1);
+}
+
+.hero__svg-curved {
+    height: 40px;
+    width: 300px;
+}
+
+.hero__greet,
+.hero__date {
+    font-size: var(--size-xl);
+    font-family: "Merriweather";
+    color: var(--clr-highlight);
+    fill: var(--clr-highlight);
+    text-shadow: 0px 0px 3px rgba(78, 54, 32, .8);
+
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+.hero__date {
+    font-size: var(--size-2xl);
+}
+
+.hero__date::before {
+    content: '';
+
+    width: 50%;
+    height: 3px;
+    margin: var(--size-4xl) auto 5px;
+    border-radius: 3px;
+
+    display: block;
+    background-color: var(--clr-third);
+}
+
+/* xs */
+/* @media (min-width : 475px) {} */
+
+/* sm */
+@media (min-width : 640px) {
+
+    .hero__title {
+        font-size: var(--size-5xl);
+    }
+
+    .hero__title::after {
+        margin-top: var(--size-5xl);
+        height: 3px;
+    }
+
+    .hero__svg-curved {
+        height: 45px;
+        margin: 0 auto;
+    }
+
+    .hero__greet,
+    .hero__date {
+        font-size: var(--size-2xl);
+    }
+}
+
+/* md */
+/* @media (min-width : 768px) {} */
+
+/* lg */
+@media (min-width : 1024px) {
+    .hero {
+        background-image: url('images/couple2HD.jpeg');
+        padding: var(--size-5xl) 0 var(--size-7xl);
+    }
+
+    .hero__title {
+        font-size: var(--size-4xl);
+    }
+
+    .hero__svg-curved {
+        height: 40px;
+    }
+
+    .hero__greet,
+    .hero__date {
+        font-size: var(--size-xl);
+    }
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */

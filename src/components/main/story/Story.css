@@ -1,0 +1,220 @@
+.story {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xl);
+    justify-content: center;
+    align-items: center;
+
+    color: var(--clr-secondary);
+    position: relative;
+}
+
+.story__title {
+    font-size: var(--size-2xl);
+    font-family: "Dancing Script", "Cormorant Garamond", serif;
+    text-shadow: 1px 0px 0px rgb(78, 54, 32);
+}
+
+.story__slider-container {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: var(--size-xxs);
+
+    width: 100%;
+    height: 100%;
+
+    border: var(--size-xxs) solid var(--clr-secondary);
+    box-shadow: 1px 1px 3px 1px rgba(78, 54, 32, .5);
+    background-color: var(--clr-secondary);
+    border-radius: 5px;
+
+    overflow-x: auto;
+    scroll-snap-type: inline mandatory;
+    scrollbar-width: none;
+}
+
+.story__slider-item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.story__slider-item>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform .5s ease-in-out;
+    border-radius: 10px;
+}
+
+.story__slider-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 5px;
+    position: absolute;
+
+    width: 100%;
+    font-family: "Dancing Script", "Great Vibes", cursive;
+    font-size: var(--size-base);
+}
+
+.story__slider-amount {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: var(--size-xl);
+}
+
+.gradasi {
+    position: absolute;
+
+    background: linear-gradient(to bottom, transparent 70%, rgb(250, 243, 224));
+    width: 100%;
+    height: 100%;
+}
+
+/* Modal */
+.story__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.story__modal-image {
+    max-width: 90%;
+    max-height: 80%;
+    border: 4px solid var(--clr-primary);
+    border-radius: 12px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.story__close-btn,
+.story__prev-btn,
+.story__next-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.story__close-btn {
+    top: 10px;
+    right: 20px;
+}
+
+.story__prev-btn {
+    left: 20px;
+}
+
+.story__next-btn {
+    right: 20px;
+}
+
+
+/* xs */
+@media (min-width : 475px) {
+    .story {
+        gap: var(--size-xl);
+    }
+
+    .story__title {
+        font-size: var(--size-3xl);
+    }
+
+    .story__slider-item-info {
+        font-size: var(--size-lg);
+    }
+
+    .story__slider-amount {
+        font-size: var(--size-2xl);
+    }
+
+}
+
+/* sm */
+@media (min-width : 640px) {
+    .story {
+        gap: var(--size-2xl);
+    }
+
+    .story__title {
+        font-size: var(--size-4xl);
+    }
+
+    .story__slider-item-info {
+        font-size: var(--size-xl);
+    }
+
+    .story__slider-amount {
+        font-size: var(--size-3xl);
+    }
+}
+
+/* md */
+@media (min-width : 768px) {
+    .story {
+        gap: var(--size-3xl);
+    }
+
+    .story__title {
+        font-size: var(--size-5xl);
+    }
+
+    .story__slider-item-info {
+        font-size: var(--size-2xl);
+    }
+
+    .story__slider-amount {
+        font-size: var(--size-4xl);
+    }
+
+}
+
+/* lg */
+@media (min-width : 1024px) {
+    .story {
+        gap: var(--size-xl);
+    }
+
+    .story__title {
+        font-size: var(--size-3xl);
+    }
+
+    .story__slider-item-info {
+        font-size: var(--size-xl);
+    }
+
+    .story__slider-amount {
+        font-size: var(--size-2xl);
+    }
+
+}
+
+/* xl */
+/* @media (min-width : 1280px) {} */
+
+/* 2xl */
+/* @media (min-width : 1536px) {} */
