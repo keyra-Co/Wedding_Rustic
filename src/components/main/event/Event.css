@@ -30,14 +30,14 @@
 
 .event__date,
 .event__location {
-    font-size: var(--size-lg);
+    font-size: var(--size-base);
     font-weight: bolder;
 }
 
 .event__hour,
 .event__location-street {
-    font-size: var(--size-base);
-    margin-bottom: var(--size-base);
+    font-size: var(--size-sm);
+    margin-bottom: var(--size-sm);
     color: rgba(78, 54, 32, .9);
 }
 
@@ -104,13 +104,13 @@
 
     .event__date,
     .event__location {
-        font-size: var(--size-xl);
+        font-size: var(--size-lg);
     }
 
     .event__hour,
     .event__location-street {
-        font-size: var(--size-lg);
-        margin-bottom: var(--size-lg);
+        font-size: var(--size-base);
+        margin-bottom: var(--size-base);
     }
 
     .event__btn-location {
@@ -131,13 +131,13 @@
 
     .event__date,
     .event__location {
-        font-size: var(--size-2xl);
+        font-size: var(--size-xl);
     }
 
     .event__hour,
     .event__location-street {
-        font-size: var(--size-xl);
-        margin-bottom: var(--size-xl);
+        font-size: var(--size-lg);
+        margin-bottom: var(--size-lg);
     }
 
     .event__btn-location {
@@ -158,13 +158,13 @@
 
     .event__date,
     .event__location {
-        font-size: var(--size-3xl);
+        font-size: var(--size-2xl);
     }
 
     .event__hour,
     .event__location-street {
-        font-size: var(--size-2xl);
-        margin-bottom: var(--size-2xl);
+        font-size: var(--size-xl);
+        margin-bottom: var(--size-xl);
     }
 
     .event__btn-location {
@@ -185,13 +185,13 @@
 
     .event__date,
     .event__location {
-        font-size: var(--size-xl);
+        font-size: var(--size-lg);
     }
 
     .event__hour,
     .event__location-street {
-        font-size: var(--size-lg);
-        margin-bottom: var(--size-lg);
+        font-size: var(--size-base);
+        margin-bottom: var(--size-base);
     }
 
     .event__btn-location {

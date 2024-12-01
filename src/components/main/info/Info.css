@@ -7,7 +7,7 @@
     flex-direction: column;
     gap: var(--size-3xl);
 
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .1);
     padding: var(--size-2xl) var(--size-lg);
     box-shadow: 1px 1px 3px 3px rgba(178, 154, 132, .5);
     border-radius: 10px;
@@ -68,8 +68,8 @@
     justify-content: center;
     align-items: center;
 
-    width: 3.5rem;
-    padding: var(--size-lg);
+    width: var(--size-6xl);
+    height: var(--size-6xl);
     border-radius: 5px;
     box-shadow: 1px 1px 3px 1px rgba(178, 154, 132, .5);
     box-sizing: border-box;
@@ -79,11 +79,11 @@
 .countDown__time {
     font-family: "Dancing Script";
     font-weight: bold;
-    font-size: var(--size-xl);
+    font-size: var(--size-lg);
 }
 
 .countDown__name {
-    font-size: var(--size-base);
+    font-size: var(--size-sm);
 }
 
 /* xs */
@@ -121,16 +121,16 @@
     }
 
     .countDown__date {
-        padding: var(--size-xl);
-        width: 4.5rem;
+        width: var(--size-7xl);
+        height: var(--size-7xl);
     }
 
     .countDown__time {
-        font-size: var(--size-2xl);
+        font-size: var(--size-xl);
     }
 
     .countDown__name {
-        font-size: var(--size-lg);
+        font-size: var(--size-base);
     }
 }
 
@@ -168,16 +168,16 @@
     }
 
     .countDown__date {
-        padding: var(--size-2xl);
-        width: 5.5rem;
+        width: var(--size-8xl);
+        height: var(--size-8xl);
     }
 
     .countDown__time {
-        font-size: var(--size-3xl);
+        font-size: var(--size-2xl);
     }
 
     .countDown__name {
-        font-size: var(--size-xl);
+        font-size: var(--size-lg);
     }
 }
 
@@ -215,16 +215,16 @@
     }
 
     .countDown__date {
-        padding: var(--size-3xl);
-        width: 6.5rem;
+        width: var(--size-9xl);
+        height: var(--size-9xl);
     }
 
     .countDown__time {
-        font-size: var(--size-4xl);
+        font-size: var(--size-3xl);
     }
 
     .countDown__name {
-        font-size: var(--size-2xl);
+        font-size: var(--size-xl);
     }
 }
 
@@ -262,16 +262,16 @@
     }
 
     .countDown__date {
-        padding: var(--size-xl);
-        width: 5.5rem;
+        width: var(--size-7xl);
+        height: var(--size-7xl);
     }
 
     .countDown__time {
-        font-size: var(--size-3xl);
+        font-size: var(--size-2xl);
     }
 
     .countDown__name {
-        font-size: var(--size-lg);
+        font-size: var(--size-base);
     }
 }
 

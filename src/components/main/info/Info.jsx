@@ -12,7 +12,7 @@ import { calculateTimeLeft } from '../../../utils/countDownTimer';
 import { useAnimate } from '../../../utils/observ';
 
 // Background Path
-import background from '../../../assets/decorations/bgRustic1.png';
+import background from '../../../assets/decorations/bgRustic.png';
 
 // Background Component
 import Background from '../../background/Background';

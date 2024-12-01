@@ -34,6 +34,12 @@ function AboutCoupleContainer() {
 
   return (
     <div className="about__couple-container">
+      <div className="about__opening">
+        <h2 className="about__opening-title">Assalamu&apos;alaikum Wr. Wb.</h2>
+        <p className="about__opening-paragraph">
+          Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara pernikahan kami:
+        </p>
+      </div>
       <AboutCouple name={'Noermina Rossya'} father={'Agus Toni'} mother={'Siti Barkah'} gender={'Putri'}>
         <ImageFrame image={'bride1.jpg'} />
       </AboutCouple>
