@@ -9,7 +9,7 @@ import barCode from '../../../assets/ornamens/qrCodeLocation.jpeg';
 import { useState } from 'react';
 
 // Background Path
-import background from '../../../assets/decorations/bgRustic1.png';
+import background from '../../../assets/decorations/bgRustic.png';
 
 // Background Component
 import Background from '../../background/Background';
