@@ -4,7 +4,7 @@ import './Opening.css';
 import Background from '../../background/Background';
 
 // Background Path
-import backrgound from '../../../assets/decorations/bgRustic1.png';
+import backrgound from '../../../assets/decorations/bgRustic.png';
 
 // Animate Utils
 import { useAnimate } from '../../../utils/observ';

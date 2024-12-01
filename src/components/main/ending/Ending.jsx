@@ -8,7 +8,7 @@ import { useAnimate } from '../../../utils/observ';
 import Background from '../../background/Background';
 
 // Background Path
-import background from '../../../assets/decorations/bgRustic1.png';
+import background from '../../../assets/decorations/bgRustic.png';
 
 // Ornamens Component
 import { OrnamensDown, OrnamensTop } from '../../ornamen/Ornamen';
@@ -27,7 +27,7 @@ export default function Ending() {
         Rossya & Dimas
       </h2>
       <p ref={setRef} className="ending__closer hiddenScale">
-        Thank You
+        - Thank You -
       </p>
       <OrnamensDown />
     </section>
