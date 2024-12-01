@@ -5,7 +5,7 @@ import './Header.css';
 // Background Component
 import Background from '../background/Background';
 
-export default function Header({ isOpen, onOpen, onPlay }) {
+export default function Header({ isOpen, onOpen, onPlay, name }) {
   function onClick() {
     onOpen();
     onPlay();
@@ -15,7 +15,7 @@ export default function Header({ isOpen, onOpen, onPlay }) {
     <header className={`header ${isOpen ? 'hide' : ''}`}>
       <Background background={'images/opening.jpeg'} init={'bg-header'} />
       <HeaderContent text={'Dear,'}>
-        <h3 className="header__guest">wedding guests</h3>
+        <h3 className="header__guest">{name}</h3>
         <span className="header__greet">You are invited!</span>
       </HeaderContent>
       <HeaderContent text={'to Celebrate the Love Of'}>

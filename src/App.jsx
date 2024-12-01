@@ -17,6 +17,7 @@ import Music from './components/music/Music';
 import { useEffect, useState } from 'react';
 import { useToggle } from './utils/useToggle';
 import { useAudio } from './utils/audioControls';
+import { useLocation } from 'react-router-dom';
 
 function App() {
   // Toggle for open the header
@@ -32,9 +33,19 @@ function App() {
     window.scrollTo(0, 0);
   }, [toggle]); // the effect only execute when toggle change
 
+  const location = useLocation();
+  let name = 'wedding guest'; // Default value
+
+  try {
+    const params = new URLSearchParams(location.search);
+    name = params.get('name') || name;
+  } catch (error) {
+    console.error('Error parsing query parameters:', error);
+  }
+
   return (
     <>
-      <Header isOpen={toggle} onOpen={handleToggle} onPlay={togglePlay} />
+      <Header isOpen={toggle} onOpen={handleToggle} onPlay={togglePlay} name={name} />
       <Divider />
       <Main onData={setData} />
       <Footer />
