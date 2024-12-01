@@ -1,7 +1,7 @@
 .footer {
     color: var(--clr-third);
     text-align: center;
-    background-color: var(--clr-accent);
+    background-color: var(--clr-primary);
     padding: var(--size-lg) var(--size-sm);
 
     display: flex;

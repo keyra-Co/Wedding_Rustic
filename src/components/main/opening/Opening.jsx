@@ -4,16 +4,20 @@ import './Opening.css';
 import Background from '../../background/Background';
 
 // Background Path
-import backrgound from '../../../assets/decorations/bgVintage2.png';
+import backrgound from '../../../assets/decorations/bgRustic1.png';
 
 // Animate Utils
 import { useAnimate } from '../../../utils/observ';
+
+// Ornamens Component
+import { OrnamensDown, OrnamensTop } from '../../ornamen/Ornamen';
 
 export default function Opening() {
   const setRef = useAnimate();
   return (
     <section className="section opening">
       <Background background={backrgound} />
+      <OrnamensTop />
       <div className="opening__container">
         <svg
           className="anima hiddenDownSvg"
@@ -98,6 +102,7 @@ export default function Opening() {
           (QS. Ar- Rum 21)
         </p>
       </div>
+      <OrnamensDown />
     </section>
   );
 }

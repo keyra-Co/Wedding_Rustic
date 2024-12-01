@@ -36,6 +36,11 @@
     margin: var(--size-xl) 0;
 }
 
+/* .opening .anima {
+    width: var(--size-7xl);
+    height: var(--size-7xl);
+} */
+
 /* xs */
 @media (min-width : 475px) {
     .opening__paragraph {
@@ -45,6 +50,11 @@
     .opening__surah {
         font-size: var(--size-xl);
     }
+
+    /* .opening .anima {
+        width: var(--size-8xl);
+        height: var(--size-8xl);
+    } */
 
 }
 
@@ -63,10 +73,11 @@
         font-size: var(--size-2xl);
     }
 
-    .anima {
+
+    /* .opening .anima {
         width: var(--size-9xl);
         height: var(--size-9xl);
-    }
+    }  */
 }
 
 /* md */
@@ -84,10 +95,10 @@
         font-size: var(--size-3xl);
     }
 
-    .anima {
+    /* .opening .anima {
         width: var(--size-10xl);
         height: var(--size-10xl);
-    }
+    } */
 }
 
 /* lg */
@@ -105,10 +116,10 @@
         font-size: var(--size-xl);
     }
 
-    .anima {
+    /* .opening .anima {
         width: var(--size-8xl);
         height: var(--size-8xl);
-    }
+    } */
 }
 
 /* xl */

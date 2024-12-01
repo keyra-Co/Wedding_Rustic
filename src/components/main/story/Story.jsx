@@ -3,7 +3,7 @@
 import './Story.css';
 
 // Background Path
-import background from '../../../assets/decorations/bgVintage2.png';
+import background from '../../../assets/decorations/bgRustic1.png';
 
 // Background Component
 import Background from '../../background/Background';

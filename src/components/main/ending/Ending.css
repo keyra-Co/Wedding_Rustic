@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center;
 
-    color: var(--clr-dark);
+    color: var(--clr-secondary);
     position: relative;
-    height: 50vh;
+    height: 60vh;
 }
 
 .ending__title {
@@ -14,7 +14,7 @@
     font-family: "Great vibes";
     text-transform: capitalize;
 
-    margin-bottom: var(--size-4xl);
+    margin-bottom: var(--size-xxs);
 }
 
 .ending__word {
@@ -34,12 +34,12 @@
 /* xs */
 @media (min-width : 475px) {
     .ending {
-        height: 50vh;
+        height: 70vh;
     }
 
     .ending__title {
         font-size: var(--size-5xl);
-        margin-bottom: var(--size-5xl);
+        /* margin-bottom: var(--size-5xl); */
     }
 
     .ending__word {
@@ -54,13 +54,9 @@
 
 /* sm */
 @media (min-width : 640px) {
-    .ending {
-        height: 50vh;
-    }
-
     .ending__title {
         font-size: var(--size-6xl);
-        margin-bottom: var(--size-6xl);
+        /* margin-bottom: var(--size-6xl); */
     }
 
     .ending__word {
@@ -75,13 +71,9 @@
 
 /* md */
 @media (min-width : 768px) {
-    .ending {
-        height: 50vh;
-    }
-
     .ending__title {
         font-size: var(--size-7xl);
-        margin-bottom: var(--size-7xl);
+        /* margin-bottom: var(--size-7xl); */
     }
 
     .ending__word {
@@ -97,12 +89,12 @@
 /* lg */
 @media (min-width : 1024px) {
     .ending {
-        height: 50vh;
+        height: 80vh;
     }
 
     .ending__title {
         font-size: var(--size-4xl);
-        margin-bottom: var(--size-4xl);
+        /* margin-bottom: var(--size-4xl); */
     }
 
     .ending__word {

@@ -9,13 +9,16 @@ import barCode from '../../../assets/ornamens/qrCodeLocation.jpeg';
 import { useState } from 'react';
 
 // Background Path
-import background from '../../../assets/decorations/bgVintage1.png';
+import background from '../../../assets/decorations/bgRustic1.png';
 
 // Background Component
 import Background from '../../background/Background';
 
 // Animate
 import { useAnimate } from '../../../utils/observ';
+
+// Ornamens Component
+import { OrnamensDown, OrnamensTop } from '../../ornamen/Ornamen';
 
 export default function Event() {
   const setRef = useAnimate();
@@ -24,6 +27,7 @@ export default function Event() {
 
   return (
     <section className="section event">
+      <OrnamensTop />
       <Background background={background} />
       <EventDetail handleOpen={setIsOpen} title={'Akad Nikah'} hour={'09.00 WIB - 10.00 WIB'} setRef={setRef}>
         <svg
@@ -101,6 +105,7 @@ S410.168,408,344,408z"
         </svg>
       </EventDetail>
       {isOpen && <ModalEvent handleOpen={setIsOpen} />}
+      <OrnamensDown />
     </section>
   );
 }

@@ -61,7 +61,7 @@ body {
 
 .section {
     padding: var(--size-4xl) var(--size-xl);
-    border-bottom: var(--size-lg) solid var(--clr-third);
+    border-bottom: var(--size-sm) solid var(--clr-third);
     width: 100%;
     height: 100%;
 }
