@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--size-2xl);
 
     color: var(--clr-secondary);
 
@@ -14,80 +13,23 @@
     font-family: "Dancing Script", "Cormorant Garamond", serif;
     font-size: var(--size-2xl);
     text-shadow: 1px 0px 0px rgb(78, 54, 32);
+    margin-top: var(--size-3xl);
+}
+
+.comment__paragraph {
+    font-size: var(--size-base);
+    text-transform: capitalize;
+    font-family: "Crimson Pro", 'Times New Roman', Times, serif;
 }
 
 .comment__container {
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-base);
-}
-
-.comment__item {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: var(--size-xl);
-
-    z-index: 2;
-}
-
-.comment__account {
-    width: var(--size-4xl);
-    height: var(--size-4xl);
-    padding: var(--size-base);
-    background-color: var(--clr-secondary);
-    border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: var(--clr-highlight);
-    font-size: var(--size-lg);
-}
-
-.comment__bubble {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    box-shadow: 1px 1px 15px 5px rgba(78, 54, 32, .3);
-    padding: var(--size-xxs) var(--size-sm);
+    background-color: var(--clr-primary);
+    padding: var(--size-2xl);
     border-radius: 10px;
-    background-color: var(--clr-third);
+    margin-bottom: var(--size-5xl);
+    min-width: 100%;
 }
 
-.comment__bubble::before {
-    content: '';
-    left: calc(var(--size-xs) * -1);
-    position: absolute;
-
-    border-top: var(--size-sm) solid transparent;
-    border-right: var(--size-base) solid var(--clr-third);
-    border-bottom: 14px solid transparent;
-}
-
-.account__name {
-    font-weight: bold;
-    font-family: "Great Vibes";
-    font-size: var(--size-lg);
-
-    margin-bottom: var(--size-xxs);
-}
-
-.account__place {
-    font-family: "Crimson Pro", serif;
-    font-size: var(--size-xs);
-    font-weight: normal;
-
-    margin-left: 5px;
-}
-
-.account__comment {
-    font-size: var(--size-sm);
-}
 
 /* xs */
 @media (min-width : 475px) {
@@ -99,37 +41,10 @@
         font-size: var(--size-3xl);
     }
 
-    .comment__container {
-        gap: var(--size-lg);
+    .comment__paragraph {
+        font-size: var(--size-lg);
     }
 
-    .comment__item {
-        gap: var(--size-2xl);
-    }
-
-    .comment__account {
-        padding: var(--size-lg);
-        width: var(--size-4xl);
-        height: var(--size-4xl);
-        font-size: var(--size-xl);
-    }
-
-    .comment__bubble {
-        padding: var(--size-xs) var(--size-base);
-    }
-
-    .account__name {
-        margin-bottom: var(--size-xs);
-        font-size: var(--size-xl);
-    }
-
-    .account__place {
-        font-size: var(--size-sm);
-    }
-
-    .account__comment {
-        font-size: var(--size-base);
-    }
 }
 
 /* sm */
@@ -142,37 +57,10 @@
         font-size: var(--size-4xl);
     }
 
-    .comment__container {
-        gap: var(--size-xl);
+    .comment__paragraph {
+        font-size: var(--size-xl);
     }
 
-    .comment__item {
-        gap: var(--size-3xl);
-    }
-
-    .comment__account {
-        padding: var(--size-xl);
-        width: var(--size-5xl);
-        height: var(--size-5xl);
-        font-size: var(--size-2xl);
-    }
-
-    .comment__bubble {
-        padding: var(--size-sm) var(--size-lg);
-    }
-
-    .account__name {
-        margin-bottom: var(--size-sm);
-        font-size: var(--size-2xl);
-    }
-
-    .account__place {
-        font-size: var(--size-base);
-    }
-
-    .account__comment {
-        font-size: var(--size-lg);
-    }
 }
 
 /* md */
@@ -185,36 +73,8 @@
         font-size: var(--size-5xl);
     }
 
-    .comment__container {
-        gap: var(--size-2xl);
-    }
-
-    .comment__item {
-        gap: var(--size-4xl);
-    }
-
-    .comment__account {
-        padding: var(--size-2xl);
-        width: var(--size-6xl);
-        height: var(--size-6xl);
-        font-size: var(--size-3xl);
-    }
-
-    .comment__bubble {
-        padding: var(--size-base) var(--size-xl);
-    }
-
-    .account__name {
-        margin-bottom: var(--size-base);
-        font-size: var(--size-3xl);
-    }
-
-    .account__place {
-        font-size: var(--size-lg);
-    }
-
-    .account__comment {
-        font-size: var(--size-xl);
+    .comment__paragraph {
+        font-size: var(--size-2xl);
     }
 }
 
@@ -226,39 +86,13 @@
 
     .comment__title {
         font-size: var(--size-3xl);
+        margin-bottom: -20px;
     }
 
-    .comment__container {
-        gap: var(--size-lg);
+    .comment__paragraph {
+        font-size: var(--size-lg);
     }
 
-    .comment__item {
-        gap: var(--size-2xl);
-    }
-
-    .comment__account {
-        padding: var(--size-lg);
-        width: var(--size-4xl);
-        height: var(--size-4xl);
-        font-size: var(--size-xl);
-    }
-
-    .comment__bubble {
-        padding: var(--size-sm) var(--size-lg);
-    }
-
-    .account__name {
-        margin-bottom: var(--size-xs);
-        font-size: var(--size-xl);
-    }
-
-    .account__place {
-        font-size: var(--size-sm);
-    }
-
-    .account__comment {
-        font-size: var(--size-base);
-    }
 }
 
 /* xl */

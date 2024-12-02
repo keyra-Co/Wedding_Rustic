@@ -35,8 +35,10 @@ function AboutCoupleContainer() {
   return (
     <div className="about__couple-container">
       <div className="about__opening">
-        <h2 className="about__opening-title">Assalamu&apos;alaikum Wr. Wb.</h2>
-        <p className="about__opening-paragraph">
+        <h2 ref={setRef} className="about__opening-title hiddenUp">
+          Assalamu&apos;alaikum Wr. Wb.
+        </h2>
+        <p ref={setRef} className="about__opening-paragraph hiddenDown">
           Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara pernikahan kami:
         </p>
       </div>

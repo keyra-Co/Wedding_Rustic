@@ -4,7 +4,7 @@
   --clr-third: rgb(250, 243, 224);
   --clr-accent: #800020;
   --clr-highlight: #F5F5DC;
-  --clr-light: #ffffff;
+  --clr-light: rgba(255, 255, 255, .9);
   --clr-dark: #2b2a26;
   /* sizes */
   --size-xxs: 0.5rem;
