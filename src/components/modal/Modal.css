@@ -1,13 +1,13 @@
 #modal {
     margin: auto;
-    max-height: 60%;
+    max-height: 70%;
     border-radius: 10px;
     border: none;
     background-color: rgb(250, 243, 224);
     box-shadow: 1px 1px 10px 5px rgba(78, 54, 32, .5);
     color: var(--clr-secondary);
     box-sizing: border-box;
-    min-width: 50%;
+    min-width: 60%;
 }
 
 #modal::backdrop {
@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: var(--size-2xl) var(--size-4xl);
+    padding: var(--size-2xl) var(--size-6xl);
     height: 100%;
     animation: fadeIn .3s ease-in;
 }
@@ -39,17 +39,21 @@
 }
 
 .modal__body {
-    max-width: 40ch;
     display: flex;
     flex-direction: column;
-    gap: var(--size-xxs);
+    gap: var(--size-3xl);
+}
+
+.modal__btn-info {
+    display: flex;
+    gap: var(--size-2xl);
+}
+
+.modal__btn-info.column {
+    flex-direction: column;
 }
 
 .modal__name {
-    font-size: var(--size-xl);
-}
-
-.modal__info {
     font-size: var(--size-lg);
 }
 
@@ -57,9 +61,10 @@
     font-size: var(--size-base);
 }
 
-.modal__footer {
+.modal__btn-container {
     display: flex;
-    gap: var(--size-lg);
+    flex-direction: column;
+    gap: var(--size-xs);
 }
 
 .modal__btn-close,
@@ -67,7 +72,7 @@
     color: var(--clr-third);
     background-color: var(--clr-secondary);
     padding: 3px 15px;
-    font-size: var(--size-lg);
+    font-size: var(--size-base);
     font-weight: bolder;
     text-transform: capitalize;
 }
@@ -77,18 +82,18 @@
     color: var(--clr-secondary);
 }
 
+
 /* xs */
 @media (min-width : 475px) {
-
     .modal__title {
         font-size: var(--size-3xl);
     }
 
-    .modal__name {
-        font-size: var(--size-2xl);
+    .modal__body {
+        gap: var(--size-4xl);
     }
 
-    .modal__info {
+    .modal__name {
         font-size: var(--size-xl);
     }
 
@@ -96,14 +101,13 @@
         font-size: var(--size-lg);
     }
 
-    .modal__footer {
-        gap: var(--size-xl);
+    .modal__btn-container {
+        gap: var(--size-sm);
     }
 
     .modal__btn-close,
     .modal__btn-copy {
-        padding: 4px 16px;
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
     }
 }
 
@@ -113,11 +117,17 @@
         font-size: var(--size-4xl);
     }
 
-    .modal__name {
-        font-size: var(--size-3xl);
+    .modal__body {
+        gap: var(--size-5xl);
+        flex-direction: row;
     }
 
-    .modal__info {
+    .modal__btn-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal__name {
         font-size: var(--size-2xl);
     }
 
@@ -125,14 +135,13 @@
         font-size: var(--size-xl);
     }
 
-    .modal__footer {
-        gap: var(--size-2xl);
+    .modal__btn-container {
+        gap: var(--size-base);
     }
 
     .modal__btn-close,
     .modal__btn-copy {
-        padding: 5px 18px;
-        font-size: var(--size-xl);
+        font-size: var(--size-2xl);
     }
 }
 
@@ -142,11 +151,11 @@
         font-size: var(--size-5xl);
     }
 
-    .modal__name {
-        font-size: var(--size-4xl);
+    .modal__body {
+        gap: var(--size-6xl);
     }
 
-    .modal__info {
+    .modal__name {
         font-size: var(--size-3xl);
     }
 
@@ -154,29 +163,27 @@
         font-size: var(--size-2xl);
     }
 
-    .modal__footer {
-        gap: var(--size-3xl);
+    .modal__btn-container {
+        gap: var(--size-lg);
     }
 
     .modal__btn-close,
     .modal__btn-copy {
-        padding: 6px 20px;
-        font-size: var(--size-2xl);
+        font-size: var(--size-3xl);
     }
 }
 
 /* lg */
 @media (min-width : 1024px) {
-
     .modal__title {
         font-size: var(--size-3xl);
     }
 
-    .modal__name {
-        font-size: var(--size-2xl);
+    .modal__body {
+        gap: var(--size-4xl);
     }
 
-    .modal__info {
+    .modal__name {
         font-size: var(--size-xl);
     }
 
@@ -184,13 +191,12 @@
         font-size: var(--size-lg);
     }
 
-    .modal__footer {
-        gap: var(--size-xl);
+    .modal__btn-container {
+        gap: var(--size-base);
     }
 
     .modal__btn-close,
     .modal__btn-copy {
-        padding: 3px 15px;
         font-size: var(--size-xl);
     }
 }

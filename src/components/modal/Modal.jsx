@@ -4,41 +4,57 @@ import './Modal.css';
 import { data1, data2 } from '../../data/dataReceiver';
 
 export default function Modal({ data }) {
-  const datas = data ? data1 : data2;
-
   const modal = document.getElementById('modal');
+
+  function copyData(text) {
+    navigator.clipboard.writeText(text);
+    alert('Text Telah Disalin');
+  }
 
   function onClick() {
     modal.close();
   }
 
-  function copyText() {
-    navigator.clipboard.writeText(datas.desc);
-    alert('Text Telah Disalin');
-  }
-
   return (
     <dialog id="modal">
-      <div className="modal__container">
-        <div className="modal__head">
-          <h2 className="modal__title">{datas.title}</h2>
-        </div>
-        <div className="line"></div>
-        <div className="modal__body">
-          <h3 className="modal__name">{datas.name}</h3>
-          <div className="modal__info">{datas.info}</div>
-          <div className="modal__description">{datas.desc}</div>
-        </div>
-        <div className="line"></div>
-        <div className="modal__footer">
-          <button className="modal__btn-close btn" onClick={onClick}>
-            close
-          </button>
-          <button className="modal__btn-copy btn" onClick={copyText}>
-            copy
-          </button>
-        </div>
-      </div>
+      {data ? (
+        <ModalContent onClick={onClick} title={data1.title}>
+          <ModalBtn init="column" name={data1.name} desc={data1.desc} onClick={() => copyData(data1.desc)} />
+        </ModalContent>
+      ) : (
+        <ModalContent onClick={onClick} title={data2.title}>
+          <ModalBtn name={data2.name1} desc={data2.desc1} onClick={() => copyData(data2.desc1)} />
+          <ModalBtn name={data2.name2} desc={data2.desc2} onClick={() => copyData(data2.desc2)} />
+        </ModalContent>
+      )}
     </dialog>
+  );
+}
+
+function ModalContent({ title, onClick, children }) {
+  return (
+    <div className="modal__container">
+      <h2 className="modal__title">{title}</h2>
+      <div className="line"></div>
+      <div className="modal__body">{children}</div>
+      <div className="line"></div>
+      <button className="modal__btn-close btn" onClick={onClick}>
+        close
+      </button>
+    </div>
+  );
+}
+
+function ModalBtn({ name, desc, onClick, init = '' }) {
+  return (
+    <div className="modal__btn-container">
+      <h3 className="modal__name">{name}</h3>
+      <div className={`modal__btn-info ${init}`}>
+        <div className="modal__description">{desc}</div>
+        <button className="modal__btn-copy btn" onClick={onClick}>
+          copy
+        </button>
+      </div>
+    </div>
   );
 }

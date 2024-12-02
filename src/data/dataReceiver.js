@@ -1,12 +1,12 @@
 export const data1 = {
   title: 'Alamat Penerima',
-  name: 'Nama Lengkap',
-  info: '085123456789',
-  desc: 'Jl. Magelang – Yogyakarta KM.6,5, Kutu Tegal, Sinduadi, Daerah Istimewa Yogyakarta 55284',
+  name: 'Noermina Rossya',
+  desc: 'Perumahan Citra Kalisuren Blok J Nomor 9',
 };
 export const data2 = {
-  title: 'Nomor Rekening',
-  name: 'Nama Lengkap',
-  info: 'Nama Bank',
-  desc: '0678855284',
+  title: 'Rekening BCA',
+  name1: 'Noermina Rossya',
+  name2: 'Dimas Agustianto',
+  desc1: '5790359676',
+  desc2: '8770433917',
 };
