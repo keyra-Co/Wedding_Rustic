@@ -19,7 +19,7 @@
 
 .about__opening-paragraph {
     font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
     margin-top: var(--size-sm);
     text-shadow: .3px 0px .3px rgb(78, 54, 32);
 }
