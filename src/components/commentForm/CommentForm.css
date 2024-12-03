@@ -3,8 +3,7 @@
     flex-direction: column;
     gap: var(--size-lg);
     color: var(--clr-secondary);
-    font-family: "Dancing Script", "Crimson Pro", 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-family: "Crimson Pro", 'Times New Roman', Times, serif;
     text-align: center;
     font-size: var(--size-base);
 }

@@ -16,6 +16,7 @@ const CommentForm = () => {
   const [comment, setComment] = useState('');
   const [name, setName] = useState('');
   const [kehadiran, setKehadiran] = useState(null);
+  const [lastCommentTime, setLastCommetTime] = useState(null);
   const [status, setStatus] = useState(null);
 
   const { comments } = useComment();
@@ -26,6 +27,13 @@ const CommentForm = () => {
   // Fungsi untuk mengirim komentar
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const now = Date.now();
+
+    if (lastCommentTime && now - lastCommentTime < 60000) {
+      setStatus('Anda hanya bisa mengirim komentar setiap 1 menit.');
+      return;
+    }
     if (!name.trim() || !comment.trim() || kehadiran === null) {
       alert('Nama, komentar dan kehadiran tidak boleh kosong!');
       return;
@@ -40,6 +48,7 @@ const CommentForm = () => {
       });
       setComment('');
       setName('');
+      setLastCommetTime(now);
       setStatus('Komentar berhasil dikirim!');
     } catch (error) {
       console.error('Error adding comment: ', error);
@@ -86,8 +95,8 @@ const CommentForm = () => {
             Konfirmasi Kehadiran
           </option>
         </select>
-        <button className="comment-form__btn btn" type="submit">
-          Kirim Komentar
+        <button disabled={status === 'Mengirim...'} className="comment-form__btn btn" type="submit">
+          {status === 'Mengirim...' ? 'Mengirim...' : 'Kirim Komentar'}
         </button>
         <div>{status && <p className="status">{status}</p>}</div>
       </form>
