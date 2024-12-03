@@ -9,25 +9,19 @@ export default function ShowComment() {
   const { loading, comments, error } = useComment();
 
   if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (comments.length === 0) {
-    return <div>Belum ada komentar</div>;
+    return <div className="loading">Loading...</div>;
   }
 
   if (error) {
     return <div>{error}</div>;
   }
 
+  const commentsContent = comments.map((comment) => <ShowCommentItem key={comment.id} {...comment} />);
+
   return (
     <div className="show-comment__container">
       <h3 className="show-comment__title">Komentar ({comments.length})</h3>
-      <ul className="show-comment__item-container">
-        {comments.map((comment) => (
-          <ShowCommentItem key={comment.id} {...comment} />
-        ))}
-      </ul>
+      <ul className="show-comment__item-container">{comments.length === 0 ? <div className="kosong">Belum ada komentar</div> : commentsContent}</ul>
     </div>
   );
 }
