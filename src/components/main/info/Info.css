@@ -32,8 +32,8 @@
 }
 
 .gift__description {
-    font-family: 'Allura', cursive;
-    font-size: var(--size-base);
+    font-family: "Delius Swash Caps", cursive;
+    font-size: var(--size-sm);
 }
 
 .gift__btn-container {
@@ -101,7 +101,7 @@
     }
 
     .gift__description {
-        font-size: var(--size-lg);
+        font-size: var(--size-base);
     }
 
     .gift__btn-container {
@@ -149,7 +149,7 @@
     }
 
     .gift__description {
-        font-size: var(--size-xl);
+        font-size: var(--size-lg);
     }
 
     .gift__btn-container {
@@ -196,7 +196,7 @@
     }
 
     .gift__description {
-        font-size: var(--size-2xl);
+        font-size: var(--size-xl);
     }
 
     .gift__btn-container {
@@ -243,7 +243,7 @@
     }
 
     .gift__description {
-        font-size: var(--size-xl);
+        font-size: var(--size-base);
     }
 
     .gift__btn-container {

@@ -1,5 +1,5 @@
 .hero {
-    background-image: url('/Wedding_Rustic/images/hero.jpg');
+    background-image: url('Wedding_Rustic/images/couple2Hero.jpg');
     background-size: cover;
     background-position: center;
 
@@ -90,7 +90,7 @@
 /* lg */
 @media (min-width : 1024px) {
     .hero {
-        background-image: url('/Wedding_Rustic/images/couple2HD.jpeg');
+        background-image: url('Wedding_Rustic/images/couple2.jpg');
         padding: var(--size-5xl) 0 var(--size-7xl);
     }
 

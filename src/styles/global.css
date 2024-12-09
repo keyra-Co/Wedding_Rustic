@@ -38,6 +38,8 @@
 /* "Crimson Pro", serif; */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&display=swap');
 /* "Lato", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bungee&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Delius+Swash+Caps&family=Meow+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Niconne&family=Oleo+Script:wght@400;700&family=Pacifico&display=swap');
+/* "Delius Swash Caps", cursive; */
 
 .anima {
     width: var(--size-7xl);

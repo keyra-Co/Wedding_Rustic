@@ -6,7 +6,7 @@ import Opening from './opening/Opening';
 import About from './about/About';
 import Event from './event/Event';
 import Info from './info/Info';
-import Story from './story/Story';
+import Gallery from './gallery/Gallery';
 import Comments from './comment/Comments';
 import Ending from './ending/Ending';
 
@@ -18,7 +18,7 @@ export default function Main({ onData }) {
       <About />
       <Event />
       <Info onData={onData} />
-      <Story />
+      <Gallery />
       <Comments />
       <Ending />
     </main>

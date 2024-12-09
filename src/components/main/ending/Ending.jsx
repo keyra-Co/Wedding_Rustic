@@ -20,22 +20,26 @@ export default function Ending() {
     <section className="ending section">
       <OrnamensTop />
       <Background background={background} />
-      <p ref={setRef} className="ending__paragraph hiddenScale">
-        Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan
-        doa restunya, kami mengucapkan terima kasih.
-      </p>
-      <p ref={setRef} className="ending__word hiddenUp">
-        Two souls become one, two hearts beat as one
-      </p>
-      <h2 ref={setRef} className="ending__closing hiddenDown">
-        Wassalamu&apos;alaikum Wr. Wb.
-      </h2>
-      <h2 ref={setRef} className="ending__title hiddenUp">
-        Rossya & Dimas
-      </h2>
-      <p ref={setRef} className="ending__closer hiddenDown">
-        - Thank You -
-      </p>
+      <div className="ending__closing-word">
+        <p ref={setRef} className="ending__paragraph hiddenScale">
+          Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran
+          dan doa restunya, kami mengucapkan terima kasih.
+        </p>
+        <h2 ref={setRef} className="ending__closing hiddenDown">
+          Wassalamu&apos;alaikum Wr. Wb.
+        </h2>
+      </div>
+      <div className="ending__thank-word">
+        <p ref={setRef} className="ending__word hiddenUp">
+          Two souls become one, two hearts beat as one
+        </p>
+        <h2 ref={setRef} className="ending__title hiddenUp">
+          Rossya & Dimas
+        </h2>
+        <p ref={setRef} className="ending__closer hiddenDown">
+          - Thank You -
+        </p>
+      </div>
       <OrnamensDown />
     </section>
   );

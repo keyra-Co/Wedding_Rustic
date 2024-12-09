@@ -5,6 +5,8 @@
     align-items: center;
     text-align: center;
 
+    gap: var(--size-3xl);
+
     color: var(--clr-secondary);
     position: relative;
     height: 70vh;
@@ -15,8 +17,6 @@
     font-size: var(--size-4xl);
     font-family: "Great vibes", cursive;
     text-transform: capitalize;
-
-    margin: var(--size-3xl) 0 var(--size-xxs);
 }
 
 .ending__word {
@@ -39,7 +39,8 @@
 
 .ending__paragraph {
     font-family: "Cormorant Garamond", 'Times New Roman', Times, serif;
-    font-size: var(--size-sm);
+    font-size: var(--size-base);
+    margin-bottom: var(--size-sm);
     text-shadow: .3px 0px .3px rgb(78, 54, 32);
 }
 
@@ -48,7 +49,6 @@
 
     .ending__title {
         font-size: var(--size-5xl);
-        margin: var(--size-4xl) 0 var(--size-xxs);
     }
 
     .ending__word {
@@ -64,7 +64,8 @@
     }
 
     .ending__paragraph {
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
+        margin-bottom: var(--size-base);
     }
 }
 
@@ -72,7 +73,6 @@
 @media (min-width : 640px) {
     .ending__title {
         font-size: var(--size-6xl);
-        margin: var(--size-5xl) 0 var(--size-xxs);
     }
 
     .ending__word {
@@ -88,7 +88,8 @@
     }
 
     .ending__paragraph {
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
+        margin-bottom: var(--size-lg);
     }
 }
 
@@ -96,7 +97,6 @@
 @media (min-width : 768px) {
     .ending__title {
         font-size: var(--size-7xl);
-        margin: var(--size-6xl) 0 var(--size-xxs);
     }
 
     .ending__word {
@@ -112,7 +112,8 @@
     }
 
     .ending__paragraph {
-        font-size: var(--size-xl);
+        font-size: var(--size-2xl);
+        margin-bottom: var(--size-xl);
     }
 }
 
@@ -125,7 +126,6 @@
 
     .ending__title {
         font-size: var(--size-4xl);
-        margin: var(--size-4xl) 0 var(--size-xxs);
     }
 
     .ending__word {
@@ -141,7 +141,8 @@
     }
 
     .ending__paragraph {
-        font-size: var(--size-base);
+        font-size: var(--size-lg);
+        margin-bottom: var(--size-base);
     }
 }
 

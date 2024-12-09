@@ -9,8 +9,8 @@ export default function Music({ onPlay, isPlaying, audioRef }) {
     <div onClick={onPlay} className="music-container">
       <img className={`music-icon ${isPlaying ? 'rotate' : ''}`} src={disc} alt="disc-audio" />
       <audio ref={audioRef} loop>
-        <source src="audios/Calum_Scott.opus" type="audio/ogg" />
-        <source src="audios/Elvis_presley.opus" type="audio/mpeg" />
+        <source src="audios/Westlife-I-Wanna-Grow-Old-with-You.opus" type="audio/ogg" />
+        <source src="audios/Westlife_I-Wanna-Grow-Old-with-You.mp3" type="audio/mpeg" />
         Your browser does not support the audio tag.
       </audio>
     </div>
