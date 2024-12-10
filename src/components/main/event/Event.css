@@ -20,6 +20,8 @@
     border-radius: 10px;
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
+    position: relative;
+    z-index: 2;
 }
 
 .event__title {
