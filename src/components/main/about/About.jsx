@@ -43,13 +43,13 @@ function AboutCoupleContainer() {
         </p>
       </div>
       <AboutCouple name={'Noermina Rossya'} father={'Agus Toni'} mother={'Siti Barkah'} gender={'Putri'}>
-        <ImageFrame image={'bride.jpg'} />
+        <ImageFrame image={'bride-removebg.png'} />
       </AboutCouple>
       <span ref={setRef} className="about__ampersand hiddenUp">
         &
       </span>
       <AboutCouple name={'Dimas Agustianto'} father={'H. Sulistiyono (Alm)'} mother={'Hj. Soginah'} gender={'Putra'}>
-        <ImageFrame image={'groom.jpg'} />
+        <ImageFrame image={'groom-removebg.png'} />
       </AboutCouple>
     </div>
   );
