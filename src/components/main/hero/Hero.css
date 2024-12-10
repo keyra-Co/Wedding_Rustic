@@ -1,5 +1,5 @@
 .hero {
-    background-image: url('/Wedding_Rustic/images/couple2Hero.jpg');
+    background-image: url('/Wedding_Rustic/images/couple3Hero.jpg');
     background-size: cover;
     background-position: center;
 
@@ -64,6 +64,10 @@
 /* sm */
 @media (min-width : 640px) {
 
+    .hero {
+        background-image: url('/Wedding_Rustic/images/couple3.jpg');
+    }
+
     .hero__title {
         font-size: var(--size-5xl);
     }
@@ -90,8 +94,7 @@
 /* lg */
 @media (min-width : 1024px) {
     .hero {
-        background-image: url('/Wedding_Rustic/images/couple2.jpg');
-        padding: var(--size-5xl) 0 var(--size-7xl);
+        padding: var(--size-xxs) 0 var(--size-7xl);
     }
 
     .hero__title {
