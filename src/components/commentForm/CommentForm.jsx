@@ -34,11 +34,14 @@ const CommentForm = () => {
       setStatus('Anda hanya bisa mengirim komentar setiap 1 menit.');
       return;
     }
+
     if (!name.trim() || !comment.trim() || kehadiran === null) {
       alert('Nama, komentar dan kehadiran tidak boleh kosong!');
       return;
     }
+
     setStatus('Mengirim...');
+
     try {
       await addDoc(collection(db, 'comments'), {
         text: DOMPurify.sanitize(comment), // Menyaring input
