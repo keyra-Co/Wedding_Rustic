@@ -21,8 +21,20 @@
     justify-content: center;
     text-align: center;
     padding: var(--size-2xl) var(--size-6xl);
+    min-height: 50vh;
     height: 100%;
     animation: fadeIn .3s ease-in;
+}
+
+.modal__message {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .line {

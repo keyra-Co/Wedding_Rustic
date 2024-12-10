@@ -3,12 +3,20 @@ import './Modal.css';
 
 import { data1, data2 } from '../../data/dataReceiver';
 
+import { useState } from 'react';
+
 export default function Modal({ data }) {
+  const [copyMessage, setCopyMessage] = useState(''); // Menyimpan pesan copy
   const modal = document.getElementById('modal');
 
   function copyData(text) {
     navigator.clipboard.writeText(text);
-    alert('Text Telah Disalin');
+    setCopyMessage('Berhasil dicopy!'); // Menampilkan pesan
+
+    // Menghilangkan pesan setelah 2 detik
+    setTimeout(() => {
+      setCopyMessage('');
+    }, 2000);
   }
 
   function onClick() {
@@ -17,6 +25,7 @@ export default function Modal({ data }) {
 
   return (
     <dialog id="modal">
+      {copyMessage && <div className="modal__message">{copyMessage}</div>}
       {data ? (
         <ModalContent onClick={onClick} title={data1.title}>
           <ModalBtn init="column" name={data1.name} desc={data1.desc} onClick={() => copyData(data1.desc)} />
